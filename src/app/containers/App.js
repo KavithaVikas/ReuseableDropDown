@@ -1,10 +1,11 @@
 import React from "react";
-import DropDown from "../components/DropDown"
+import DropDown from "../components/DropDown";
+import {data} from "../constants/config"
 
 
 export default class App extends React.Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state={
             selectedValue:"INDIA"
         }
@@ -19,7 +20,7 @@ export default class App extends React.Component {
         console.log(this.state.selectedValue);
     }
     render() {
-        const data = ["INDIA", "JAPAN", "KOREA"];
+        
         return (
             <div>
                 <h1> Hello World! </h1>
